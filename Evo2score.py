@@ -70,7 +70,7 @@ def calculateSequenceScore(input_sequence, base64_data) -> float:
 def runEvo2(dna_sequence):
     load_dotenv()
 
-    MODEL_ENDPOINT = "https://evo2-40b-predictor-austaadmin-stju-b700e7ae.ai-application.stjude.org"
+    MODEL_ENDPOINT = "https://evo2-40b-predictor-austaadmin-stju-b700e7ae.ai-application.tramle.org"
     #there are 2 different endpoints, one is for sequence generation, hence the name "generate"
     # the other is for forward passing for likelihood calculation, extracting embeddings, etc, hence the name "forward"
     #API_PATH = "/biology/arc/evo2/generate"

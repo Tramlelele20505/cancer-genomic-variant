@@ -1,9 +1,9 @@
 
-# KIDS25-Team22
+# Tram Le
 
 # Genesis: Multi-Modal Agentic AI for Cancer Variant Effect Prioritization
 
-![Alt text](assets/genesis_summary.jpeg)
+![Genesis Architecture](assets/genesis_architecture.png)
 
 
 ## What this repository is
@@ -26,7 +26,7 @@ This project is intended for research and experimentation. It relies on a number
 - A conda environment is recommended. The project contains a pinned `requirements.txt` with many heavy packages (Torch, Transformers, scientific stack).
 - The following environment variables and API keys should be available as environment variables - `ALPGENOME_API_KEY`, `PCAI_EVO2_ENDPOINT`, `PCAI_EVO2_TOKEN`
 - Ollama should be serving and have appropriate models available as mentioned in the `config.py`
-- Currently EVO2 is running on St. Jude's internal network as specified in `agents.runEvo2()`. 
+- Currently EVO2 is running on Tram Le's internal network as specified in `agents.runEvo2()`. 
 
 
 ## Suggested setup

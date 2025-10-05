@@ -1,0 +1,22 @@
+The user provided an architecture diagram image showing the Genesis system workflow with:
+
+1. Genesis (User Input VCF + Prompt) → Prioritized Variants, Literature Summary
+2. Orchestrator LLM containing:
+   - VariantGetter Agent
+   - ClinVar API
+   - Literature Agent
+   - AlphaGenome API
+   - GPN API
+3. Ranking Agent LLM with:
+   - Variant annotation string
+   - dbNSFP (CADD, REVEL, etc.)
+   - Population allele frequencies
+   - ClinVar annotations scores
+   - Evo2 scores
+   - GPN scores
+4. Reporter Agent LLM outputting:
+   - Elo-style ranked output
+   - Top 5-10 candidates prioritized from VariVar anasfactions
+   - Literature review
+
+The diagram shows the flow: 1) User submits → 2) Orchestrator LLM coordinates API calls → 3) Ranking Agent LLM processes data → 4) Reporter Agent LLM outputs results
